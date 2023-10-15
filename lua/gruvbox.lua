@@ -841,7 +841,7 @@ local function get_groups()
     CarbonDanger = { link = "GruvboxRed" },
     CarbonPending = { link = "GruvboxYellow" },
     NoiceCursor = { link = "TermCursor" },
-    NoiceCmdlinePopupBorder = { fg = colors.blue, bg = colors.bg0, reverse = config.invert_signs },
+    NoiceCmdlinePopupBorder = { fg = colors.blue, bg = colors.bg0 },
     NotifyDEBUGBorder = { link = "GruvboxBlue" },
     NotifyDEBUGIcon = { link = "GruvboxBlue" },
     NotifyDEBUGTitle = { link = "GruvboxBlue" },
