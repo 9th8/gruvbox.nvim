@@ -1,48 +1,5 @@
----@class Gruvbox
----@field config GruvboxConfig
----@field palette GruvboxPalette
 local Gruvbox = {}
 
----@alias Contrast "hard" | "soft" | ""
-
----@class ItalicConfig
----@field strings boolean
----@field comments boolean
----@field operators boolean
----@field folds boolean
----@field emphasis boolean
-
----@class HighlightDefinition
----@field fg string?
----@field bg string?
----@field sp string?
----@field blend integer?
----@field bold boolean?
----@field standout boolean?
----@field underline boolean?
----@field undercurl boolean?
----@field underdouble boolean?
----@field underdotted boolean?
----@field strikethrough boolean?
----@field italic boolean?
----@field reverse boolean?
----@field nocombine boolean?
-
----@class GruvboxConfig
----@field terminal_colors boolean?
----@field undercurl boolean?
----@field underline boolean?
----@field bold boolean?
----@field italic ItalicConfig?
----@field strikethrough boolean?
----@field contrast Contrast?
----@field invert_selection boolean?
----@field invert_signs boolean?
----@field invert_tabline boolean?
----@field invert_intend_guides boolean?
----@field inverse boolean?
----@field overrides table<string, HighlightDefinition>?
----@field palette_overrides table<string, string>?
 Gruvbox.config = {
   terminal_colors = true,
   undercurl = true,
@@ -884,6 +841,7 @@ local function get_groups()
     CarbonDanger = { link = "GruvboxRed" },
     CarbonPending = { link = "GruvboxYellow" },
     NoiceCursor = { link = "TermCursor" },
+    NoiceCmdlinePopupBorder = { fg = colors.blue, bg = colors.bg0, reverse = config.invert_signs },,
     NotifyDEBUGBorder = { link = "GruvboxBlue" },
     NotifyDEBUGIcon = { link = "GruvboxBlue" },
     NotifyDEBUGTitle = { link = "GruvboxBlue" },
