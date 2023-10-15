@@ -2,7 +2,7 @@ local Gruvbox = {}
 
 Gruvbox.config = {
   terminal_colors = true,
-  undercurl = true,
+  undercurl = false,
   underline = true,
   bold = true,
   italic = {
@@ -228,7 +228,7 @@ local function get_groups()
     GruvboxYellowSign = config.transparent_mode and { fg = colors.yellow, reverse = config.invert_signs }
       or { fg = colors.yellow, bg = colors.bg1, reverse = config.invert_signs },
     GruvboxBlueSign = config.transparent_mode and { fg = colors.blue, reverse = config.invert_signs }
-      or { fg = colors.blue, bg = colors.bg1, reverse = config.invert_signs },
+      or { fg = colors.blue, bg = colors.bg0, reverse = config.invert_signs },
     GruvboxPurpleSign = config.transparent_mode and { fg = colors.purple, reverse = config.invert_signs }
       or { fg = colors.purple, bg = colors.bg1, reverse = config.invert_signs },
     GruvboxAquaSign = config.transparent_mode and { fg = colors.aqua, reverse = config.invert_signs }
@@ -277,8 +277,8 @@ local function get_groups()
     Question = { link = "GruvboxOrangeBold" },
     WarningMsg = { link = "GruvboxRedBold" },
     LineNr = { fg = colors.bg4 },
-    SignColumn = config.transparent_mode and { bg = nil } or { bg = colors.bg1 },
-    Folded = { fg = colors.gray, bg = colors.bg1, italic = config.italic.folds },
+    SignColumn = config.transparent_mode and { bg = nil } or { bg = colors.bg0 },
+    Folded = { fg = colors.gray, bg = colors.bg0, italic = config.italic.folds },
     FoldColumn = config.transparent_mode and { fg = colors.gray, bg = nil } or { fg = colors.gray, bg = colors.bg1 },
     Cursor = { reverse = config.inverse },
     vCursor = { link = "Cursor" },
@@ -847,12 +847,12 @@ local function get_groups()
     NotifyERRORBorder = { link = "GruvboxRed" },
     NotifyERRORIcon = { link = "GruvboxRed" },
     NotifyERRORTitle = { link = "GruvboxRed" },
-    NotifyINFOBorder = { link = "GruvboxAqua" },
-    NotifyINFOIcon = { link = "GruvboxAqua" },
-    NotifyINFOTitle = { link = "GruvboxAqua" },
-    NotifyTRACEBorder = { link = "GruvboxGreen" },
-    NotifyTRACEIcon = { link = "GruvboxGreen" },
-    NotifyTRACETitle = { link = "GruvboxGreen" },
+    NotifyINFOBorder = { link = "GruvboxGreen" },
+    NotifyINFOIcon = { link = "GruvboxGreen" },
+    NotifyINFOTitle = { link = "GruvboxGreen" },
+    NotifyTRACEBorder = { link = "GruvboxAqua" },
+    NotifyTRACEIcon = { link = "GruvboxAqua" },
+    NotifyTRACETitle = { link = "GruvboxAqua" },
     NotifyWARNBorder = { link = "GruvboxYellow" },
     NotifyWARNIcon = { link = "GruvboxYellow" },
     NotifyWARNTitle = { link = "GruvboxYellow" },
