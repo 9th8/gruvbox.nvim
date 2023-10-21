@@ -1026,7 +1026,6 @@ Gruvbox.load = function()
     vim.cmd.hi("clear")
   end
   vim.g.colors_name = "gruvbox"
-  vim.o.termguicolors = true
 
   local groups = get_groups()
 
