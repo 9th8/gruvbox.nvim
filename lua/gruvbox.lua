@@ -933,6 +933,7 @@ local function get_groups()
     ["@keyword.function"] = { link = "Keyword" },
     ["@keyword.operator"] = { link = "GruvboxRed" },
     ["@keyword.return"] = { link = "Keyword" },
+    ["@keyword.modifier"] = { link = "Keyword" },
     ["@conditional"] = { link = "Conditional" },
     ["@repeat"] = { link = "Repeat" },
     ["@debug"] = { link = "Debug" },
