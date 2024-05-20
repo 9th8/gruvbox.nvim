@@ -868,6 +868,7 @@ local function get_groups()
     ["@lsp.type.enumMember"] = { link = "@constant" },
     ["@lsp.type.function"] = { link = "@function" },
     ["@lsp.type.interface"] = { link = "@constructor" },
+    ["@lsp.type.keyword.lua"] = { link = "@comment" },
     ["@lsp.type.macro"] = { link = "@macro" },
     ["@lsp.type.method"] = { link = "@method" },
     ["@lsp.type.namespace"] = { link = "@namespace" },
