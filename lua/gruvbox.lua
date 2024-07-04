@@ -968,7 +968,7 @@ local function get_groups()
   return groups
 end
 
----@param config GruvboxConfig?
+---
 Gruvbox.setup = function(config)
   Gruvbox.config = vim.tbl_deep_extend("force", Gruvbox.config, config or {})
 end
