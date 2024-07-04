@@ -273,7 +273,7 @@ local function get_groups()
     WildMenu = { fg = colors.blue, bg = colors.bg2, bold = config.bold },
     Directory = { link = "GruvboxBlueBold" },
     Title = { link = "GruvboxGreenBold" },
-    ErrorMsg = { fg = colors.bg0, bg = colors.red, bold = config.bold },
+    ErrorMsg = { fg = colors.red, bg = colors.bg0, bold = config.bold },
     MoreMsg = { link = "GruvboxYellowBold" },
     ModeMsg = { link = "GruvboxYellowBold" },
     Question = { link = "GruvboxOrangeBold" },
