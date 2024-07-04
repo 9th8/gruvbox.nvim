@@ -256,7 +256,7 @@ local function get_groups()
     CursorLineNr = { fg = colors.yellow, bg = colors.bg1 },
     CursorLineFold = { bg = colors.bg1 },
     Delimiter = { fg = colors.fg1 },
-    NonText = { link = "GruvboxBg2" },
+    NonText = { link = "GruvboxBg3" },
     SpecialKey = { link = "GruvboxFg4" },
     Visual = { bg = colors.bg3, reverse = config.invert_selection },
     VisualNOS = { link = "Visual" },
